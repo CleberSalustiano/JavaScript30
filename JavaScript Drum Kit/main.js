@@ -12,6 +12,7 @@ const crash = document.querySelector('#crash audio')
 body.addEventListener('keydown', function (event) {
   switch (event.code) {
     case 'KeyA':
+      stick.currentTime = 0
       stick.play()
       const drumStick = document.querySelector('#stick')
       drumStick.classList.add('press')
@@ -21,6 +22,7 @@ body.addEventListener('keydown', function (event) {
       break
 
     case 'KeyS':
+      hihat.currentTime = 0
       hihat.play()
       const drumHihat = document.querySelector('#hihat')
       drumHihat.classList.add('press')
@@ -30,6 +32,7 @@ body.addEventListener('keydown', function (event) {
       break
 
     case 'KeyD':
+      kick.currentTime = 0
       kick.play()
       const drumKick = document.querySelector('#kick')
       drumKick.classList.add('press')
@@ -39,6 +42,7 @@ body.addEventListener('keydown', function (event) {
       break
 
     case 'KeyF':
+      openhat.currentTime = 0
       openhat.play()
       const drumOpenHat = document.querySelector('#openhat')
       drumOpenHat.classList.add('press')
@@ -48,6 +52,7 @@ body.addEventListener('keydown', function (event) {
       break
 
     case 'KeyG':
+      boom.currentTime = 0
       boom.play()
       const drumBoom = document.querySelector('#boom')
       drumBoom.classList.add('press')
@@ -57,6 +62,7 @@ body.addEventListener('keydown', function (event) {
       break
 
     case 'KeyH':
+      ride.currentTime = 0
       ride.play()
       const drumRide = document.querySelector('#ride')
       drumRide.classList.add('press')
@@ -66,6 +72,7 @@ body.addEventListener('keydown', function (event) {
       break
 
     case 'KeyJ':
+      snare.currentTime = 0
       snare.play()
       const drumSnare = document.querySelector('#snare')
       drumSnare.classList.add('press')
@@ -75,6 +82,7 @@ body.addEventListener('keydown', function (event) {
       break
 
     case 'KeyK':
+      tom.currentTime = 0
       tom.play()
       const drumTom = document.querySelector('#tom')
       drumTom.classList.add('press')
@@ -84,6 +92,7 @@ body.addEventListener('keydown', function (event) {
       break
 
     case 'KeyL':
+      crash.currentTime = 0
       crash.play()
       const drumCrash = document.querySelector('#crash')
       drumCrash.classList.add('press')
