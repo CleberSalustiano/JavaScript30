@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://static.vecteezy.com/ti/vetor-gratis/p1/3600163-motion-blur-tropical-sunset-beach-with-a-background-of-abstract-ocean-waves-bokeh-sun-light-copy-the-summer-vacation-room-and-business-travel-concept-antique-tom-cor-filtro-estilo-vetor.jpg');
+}
+
+section {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+div span {
+  background-color: black;
+  border: 1px solid black;
+  width: 70px;
+  position: absolute;
+  margin-top: -2px;
+}
+
+div#hours span {
+  width: 60px;
+}
+
+div#hours {
+  transform: rotate(-90deg);
+}
+
+div#minutes span {
+  width: 80px;
+}
+
+div#seconds {
+  transform: rotate(-90deg);
+}
+div#seconds span {
+  width: 80px;
+  border-width: 1px;
+}
+
+section#clock > div {
+  padding: 100px;
+  border: 10px solid white;
+  border-radius: 1000px;
+}
+
+#circle {
+  position: absolute;
+  border: 1px solid black;
+  background-color: black;
+  margin: -3px -3px;
+  width: 6px;
+  height: 6px;
+  z-index: 10;
+  border-radius: 100px;
+}
