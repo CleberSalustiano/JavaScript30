@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 44px;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+  font-weight: 100;
+  font-family: serif;
+
+  font-size: 26px;
+  color: white;
+}
+
+img {
+  padding: 20px;
+  background-color: #ffc600;
+}
+
+h1 span {
+  color: #ffc600;
+}
+
+body {
+  background-color: rgb(19, 46, 46);
+}

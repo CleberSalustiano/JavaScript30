@@ -13,7 +13,7 @@ function pointerHour(pointerValue, pointer) {
 
 setInterval(() => {
   if (second == undefined) {
-    second = 45
+    second = 44
   }
   if (minute == undefined) {
     minute = 0
@@ -27,17 +27,17 @@ setInterval(() => {
   pointer(minute, dminute)
   pointerHour(hour, dhour)
 
-  if (second == 60) {
+  if (second == 45) {
     minute += 1
-    second = 0
+    second = -15
   }
 
-  if (minute == 60) {
+  if (minute == 45) {
     hour += 1
     minute = 0
   }
 
-  if (hour == 12) {
+  if (hour == 9) {
     hour = 0
   }
 }, 1000)

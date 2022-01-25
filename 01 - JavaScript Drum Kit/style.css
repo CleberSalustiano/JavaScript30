@@ -21,12 +21,20 @@ body {
   width: 100px;
   height: 80px;
   border-radius: 5px;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 #drumkit div.press {
   border: 8px solid rgba(201, 230, 75, 0.945);
   background-color: rgba(202, 230, 75, 0.246);
+}
+
+#drumkit div.press > span {
+  font-size: 24px;
+}
+
+#drumkit div.press > span:nth-child(2) {
+  font-size: 17px;
 }
 
 #drumkit > div > span {
