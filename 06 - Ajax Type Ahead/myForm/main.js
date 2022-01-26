@@ -19,10 +19,14 @@ console.log(citiesStates)
 let arrayTest = ['arroz', 'feijao']
 
 const input = document.querySelector('.search')
+const ul = document.querySelector('ul')
 
 input.addEventListener('input', function () {
-  let haveIt = input.value == 'a*'
-  if (haveIt) {
-    console.log('arroz')
+  const regex = new RegExp(input.value, 'gi')
+  ul.innerHTML = ''
+  for (const element of citiesStates) {
+    if (element.match(regex) != null) {
+      ul.innerHTML += `<li>${element}</li>`
+    }
   }
 })
